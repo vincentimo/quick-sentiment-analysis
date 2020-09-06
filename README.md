@@ -24,7 +24,7 @@ $ ./analyze.sh "great"
   }
 }
 
-$ ./analyze.sh "great"
+$ ./analyze.sh "terrible"
 {
   "label" : "neg",
   "probability" : {
@@ -42,6 +42,16 @@ $ ./analyze.sh "hi friend"
     "pos" : 0.567685479282192,
     "neg" : 0.432314520717808
   }
+}
+
+$ ./analyze.sh "That's rough, buddy."
+{
+   "label" : "pos",
+   "probability" : {
+      "neutral" : 0.278910927674793,
+      "pos" : 0.560894239418701,
+      "neg" : 0.439105760581299
+   }
 }
 
 $ ./analyze.sh
